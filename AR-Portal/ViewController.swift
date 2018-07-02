@@ -16,7 +16,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         configuration.planeDetection = .horizontal
-        self.sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin,ARSCNDebugOptions.showFeaturePoints]
+//        self.sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin,ARSCNDebugOptions.showFeaturePoints]
         self.sceneView.session.run(configuration)
         self.sceneView.delegate = self
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap))
