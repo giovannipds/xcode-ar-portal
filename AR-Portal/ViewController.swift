@@ -80,6 +80,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func addPlane(nodeName: String, portalNode: SCNNode, imageName: String) {
         let child = portalNode.childNode(withName: nodeName, recursively: true)
         child?.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Portal.scnassets/\(imageName).png")
+        child?.renderingOrder = 200
     }
 
 }
