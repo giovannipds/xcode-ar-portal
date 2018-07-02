@@ -14,7 +14,7 @@
 		ADAA3B9520E9C174002CA2C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAA3B9320E9C174002CA2C6 /* LaunchScreen.storyboard */; };
 		ADAA3BA020E9C174002CA2C6 /* AR_PortalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAA3B9F20E9C174002CA2C6 /* AR_PortalTests.swift */; };
 		ADAA3BAB20E9C174002CA2C6 /* AR_PortalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAA3BAA20E9C174002CA2C6 /* AR_PortalUITests.swift */; };
-		ADAA3BB920E9C4A8002CA2C6 /* Portal.scn in Resources */ = {isa = PBXBuildFile; fileRef = ADAA3BB820E9C4A8002CA2C6 /* Portal.scn */; };
+		ADD9D88920E9D4E700013976 /* Portal.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD9D88820E9D4E700013976 /* Portal.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		ADAA3BA620E9C174002CA2C6 /* AR-PortalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR-PortalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAA3BAA20E9C174002CA2C6 /* AR_PortalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_PortalUITests.swift; sourceTree = "<group>"; };
 		ADAA3BAC20E9C174002CA2C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADAA3BB820E9C4A8002CA2C6 /* Portal.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Portal.scn; sourceTree = "<group>"; };
+		ADD9D88820E9D4E700013976 /* Portal.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Portal.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 				ADAA3B9120E9C174002CA2C6 /* Assets.xcassets */,
 				ADAA3B9320E9C174002CA2C6 /* LaunchScreen.storyboard */,
 				ADAA3B9620E9C174002CA2C6 /* Info.plist */,
-				ADAA3BB820E9C4A8002CA2C6 /* Portal.scn */,
+				ADD9D88820E9D4E700013976 /* Portal.scnassets */,
 			);
 			path = "AR-Portal";
 			sourceTree = "<group>";
@@ -232,9 +232,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD9D88920E9D4E700013976 /* Portal.scnassets in Resources */,
 				ADAA3B9520E9C174002CA2C6 /* LaunchScreen.storyboard in Resources */,
 				ADAA3B9220E9C174002CA2C6 /* Assets.xcassets in Resources */,
-				ADAA3BB920E9C4A8002CA2C6 /* Portal.scn in Resources */,
 				ADAA3B9020E9C170002CA2C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
