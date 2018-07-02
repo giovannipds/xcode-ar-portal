@@ -46,6 +46,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         self.sceneView.scene.rootNode.addChildNode(portalNode)
         self.addPlane(nodeName: "roof", portalNode: portalNode, imageName: "top")
         self.addPlane(nodeName: "floor", portalNode: portalNode, imageName: "bottom")
+        self.addPlane(nodeName: "backWall", portalNode: portalNode, imageName: "back")
+        self.addPlane(nodeName: "sideWallA", portalNode: portalNode, imageName: "sideA")
+        self.addPlane(nodeName: "sideWallB", portalNode: portalNode, imageName: "sideB")
+        self.addPlane(nodeName: "sideDoorA", portalNode: portalNode, imageName: "sideDoorA")
+        self.addPlane(nodeName: "sideDoorB", portalNode: portalNode, imageName: "sideDoorB")
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,6 +66,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.planeDetected.isHidden = true
         }
+    }
+    
+    func addWalls(nodeName: String, portalNode: SCNNode, imageName: String) {
+        let child = portalNode.childNode(withName: nodeName, recursively: true)
+        child?.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "Portal.scnassets/\(imageName).png")
     }
     
     func addPlane(nodeName: String, portalNode: SCNNode, imageName: String) {
