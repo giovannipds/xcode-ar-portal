@@ -46,11 +46,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         self.sceneView.scene.rootNode.addChildNode(portalNode)
         self.addPlane(nodeName: "roof", portalNode: portalNode, imageName: "top")
         self.addPlane(nodeName: "floor", portalNode: portalNode, imageName: "bottom")
-        self.addPlane(nodeName: "backWall", portalNode: portalNode, imageName: "back")
-        self.addPlane(nodeName: "sideWallA", portalNode: portalNode, imageName: "sideA")
-        self.addPlane(nodeName: "sideWallB", portalNode: portalNode, imageName: "sideB")
-        self.addPlane(nodeName: "sideDoorA", portalNode: portalNode, imageName: "sideDoorA")
-        self.addPlane(nodeName: "sideDoorB", portalNode: portalNode, imageName: "sideDoorB")
+        self.addWalls(nodeName: "backWall", portalNode: portalNode, imageName: "back")
+        self.addWalls(nodeName: "sideWallA", portalNode: portalNode, imageName: "sideA")
+        self.addWalls(nodeName: "sideWallB", portalNode: portalNode, imageName: "sideB")
+        self.addWalls(nodeName: "sideDoorA", portalNode: portalNode, imageName: "sideDoorA")
+        self.addWalls(nodeName: "sideDoorB", portalNode: portalNode, imageName: "sideDoorB")
     }
 
     override func didReceiveMemoryWarning() {
